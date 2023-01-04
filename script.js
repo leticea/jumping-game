@@ -34,5 +34,6 @@ setInterval(function(){
     && ((cTop < holeTop) || (cTop > holeTop + 130)))) {
     alert("Game Over. Score: "+(counter-1));
     character.style.top = 100 + "px";
+    counter = 0;
   }
-});
+}, 10);
