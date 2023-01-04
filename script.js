@@ -4,3 +4,9 @@ const character = document.getElementById("character");
 
 let jumping = 0;
 let counter = 0;
+
+hole.addEventListener('animationiteration', () => {
+  let random = -((Math.random()*300)+150);
+  hole.style.top = random + "px";
+  counter++;
+});
