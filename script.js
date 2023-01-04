@@ -41,10 +41,14 @@ setInterval(function(){
 function jump() {
   jumping = 1;
   let jumpCount = 0;
-  
+
   let jumpInterval = setInterval(function() {
     let characterTop = parseInt(
       window.getComputedStyle(character).getPropertyPriority("top")
     );
+
+    if ((characterTop > 6) && (jumpCount < 15)) {
+      character.style.top = (characterTop - 5) + "px";
+    }
   })
 }
