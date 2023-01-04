@@ -50,5 +50,13 @@ function jump() {
     if ((characterTop > 6) && (jumpCount < 15)) {
       character.style.top = (characterTop - 5) + "px";
     }
-  })
-}
+
+    if (jumpCount > 20) {
+      clearInterval(jumpInterval);
+      jumping = 0;
+      jumpCount = 0;
+    }
+
+    jumpCount++;
+  }, 10)
+};
