@@ -7,6 +7,15 @@ let counter = 0;
 
 hole.addEventListener('animationiteration', () => {
   let random = -((Math.random()*300)+150);
-  hole.style.top = random + "px";
+  hole.style.top = random + "px"; //faz os "canos" mudarem de posição
   counter++;
+});
+
+setInterval(function(){
+  let characterTop = parseInt(
+    Window.getComputedStyle(character).getPropertyValue("top")
+  );
+  if (jumping == 0) {
+    
+  }
 });
