@@ -15,12 +15,16 @@ setInterval(function(){
   let characterTop = parseInt(
     Window.getComputedStyle(character).getPropertyValue("top")
   );
-  
+
   if (jumping == 0) {
     character.style.top = (characterTop+3)+"px";
   }
 
   let blockLeft = parseInt(
     Window.getComputedStyle(block).getPropertyValue("left")
+  );
+
+  let holeTop = parseInt(
+    Window.getComputedStyle(hole).getPropertyValue("top")
   );
 });
