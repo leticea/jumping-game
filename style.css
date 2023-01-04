@@ -10,3 +10,35 @@
   margin: auto;
   overflow: hidden;
 }
+
+#block {
+  width: 50px;
+  height: 500px;
+  background-color: #000;
+  position: relative;
+  left: 400px;
+  animation: block 2s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 400px;
+  }
+  100% {
+    left: -50px;
+  }
+}
+
+#hole {
+  width: 50px;
+  height: 150px;
+  background-color: #fff;
+  position: relative;
+  left: 400px;
+  top: -500px;
+  animation: block 2s infinite linear;
+}
+
+#character {
+  width: 20px;
+}
